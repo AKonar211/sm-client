@@ -19,8 +19,8 @@ function App() {
         <Route exact path="/">
           {user ? <Home /> : <Register />}
         </Route>
-        <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
-        <Route path="/register">
+        <Route path="https://social-client-q152.onrender.com/login">{user ? <Redirect to="/" /> : <Login />}</Route>
+        <Route path="https://social-client-q152.onrender.com/register">
           {user ? <Redirect to="/" /> : <Register />}
         </Route>
         <Route path="/profile/:username">
